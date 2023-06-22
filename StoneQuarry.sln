@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoneQuarry", "StoneQuarry\StoneQuarry.csproj", "{7215233A-0D58-42EB-BF96-D97DDE2FEAFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Publish|Any CPU = Publish|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7215233A-0D58-42EB-BF96-D97DDE2FEAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7215233A-0D58-42EB-BF96-D97DDE2FEAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7215233A-0D58-42EB-BF96-D97DDE2FEAFC}.Publish|Any CPU.ActiveCfg = Publish|Any CPU
+		{7215233A-0D58-42EB-BF96-D97DDE2FEAFC}.Publish|Any CPU.Build.0 = Publish|Any CPU
+		{7215233A-0D58-42EB-BF96-D97DDE2FEAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7215233A-0D58-42EB-BF96-D97DDE2FEAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8D03FD6-F621-4F3A-93F6-DCBCC4CB7ABB}
+	EndGlobalSection
+EndGlobal
