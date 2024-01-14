@@ -1,222 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!--Project was exported from assembly: D:\Develope\VintageStory\Temp\WeaponPackAlpha\CustomWeaponSpeed.dll-->
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8CDF4758-86B0-48DC-BAC1-13B0037A174A}</ProjectGuid>
+    <TargetFramework>net7.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <AssemblyName>CustomWeaponSpeed</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
-    <FileAlignment>512</FileAlignment>
-    <RootNamespace>CustomWeaponSpeed</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>CustomWeaponSpeed</AssemblyTitle>
+    <Product>CustomWeaponSpeed</Product>
+    <Copyright>Copyright ©  2022</Copyright>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="VintagestoryAPI">
-      <HintPath>C:\VintageStory\1.18\VintagestoryAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="VintagestoryLib">
-      <HintPath>C:\VintageStory\1.18\VintagestoryLib.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="src\AssemblyInfo.cs" />
-    <Compile Include="src\FastSwordChargeNone.cs" />
-    <Compile Include="src\NormalSwordChargeFast.cs" />
-    <Compile Include="src\NormalSwordChargeNone.cs" />
-    <Compile Include="src\SlowSpearChargeFast.cs" />
-    <Compile Include="src\SlowSwordChargeFast.cs" />
-    <Compile Include="src\SlowSwordChargeSlow.cs" />
-    <Compile Include="src\VeryFastSpearChargeNone.cs" />
-    <Compile Include="src\VeryFastSwordChargeNone.cs" />
-    <Compile Include="src\VerySlowSpearChargeSlow.cs" />
-    <Compile Include="src\VerySlowSwordChargeFast.cs" />
-    <Compile Include="src\WeaponPackAlphaMod.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\game\lang\en.json" />
-    <None Include="assets\weaponpacka\blocktypes\clay\mold\clubmold.json" />
-    <None Include="assets\weaponpacka\blocktypes\clay\mold\khopeshmold.json" />
-    <None Include="assets\weaponpacka\blocktypes\clay\mold\knifemold.json" />
-    <None Include="assets\weaponpacka\blocktypes\clay\mold\tachimold.json" />
-    <None Include="assets\weaponpacka\config\handbook\weaponpackalpha.json" />
-    <None Include="assets\weaponpacka\entities\chakri.json" />
-    <None Include="assets\weaponpacka\entities\mambele.json" />
-    <None Include="assets\weaponpacka\entities\throwingspear.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\bastardswordhead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\epsilonaxehead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\halberdhead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\harvestknifehead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\igorothead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\javelinfletching.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\leadclubhead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\mambelehead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\naginatahead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\spathahead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\spontoonhead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\tachihead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\throwingspearhead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\waraxehead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\warhammerhead.json" />
-    <None Include="assets\weaponpacka\itemtypes\resource\toolhead\warpickhead.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\bastardsword.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\boneclub.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\bonetrident.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\chakri.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\club.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\culacula.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\epsilonaxe.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\gladius.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\haleberd.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\heavyspear.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\igorot.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\katar.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\khopes.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\machete.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\macuahuitl.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\mambele.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\naginata.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\rapier.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\spikedagger.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\tachi.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\throwingspear.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\waraxe.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\warhammer.json" />
-    <None Include="assets\weaponpacka\itemtypes\tool\warpick.json" />
-    <None Include="assets\weaponpacka\lang\en.json" />
-    <None Include="assets\weaponpacka\recipes\clayforming\clubmold.json" />
-    <None Include="assets\weaponpacka\recipes\clayforming\khopeshmold.json" />
-    <None Include="assets\weaponpacka\recipes\clayforming\knifemold.json" />
-    <None Include="assets\weaponpacka\recipes\clayforming\tachimold.json" />
-    <None Include="assets\weaponpacka\recipes\grid\bastardsword.json" />
-    <None Include="assets\weaponpacka\recipes\grid\bonetrident.json" />
-    <None Include="assets\weaponpacka\recipes\grid\bushknife.json" />
-    <None Include="assets\weaponpacka\recipes\grid\clubs.json" />
-    <None Include="assets\weaponpacka\recipes\grid\culacula.json" />
-    <None Include="assets\weaponpacka\recipes\grid\haleberd.json" />
-    <None Include="assets\weaponpacka\recipes\grid\igorotaxe.json" />
-    <None Include="assets\weaponpacka\recipes\grid\macuahuitl.json" />
-    <None Include="assets\weaponpacka\recipes\grid\mambele.json" />
-    <None Include="assets\weaponpacka\recipes\grid\naginata.json" />
-    <None Include="assets\weaponpacka\recipes\grid\spatha.json" />
-    <None Include="assets\weaponpacka\recipes\grid\spontoon.json" />
-    <None Include="assets\weaponpacka\recipes\grid\tachi.json" />
-    <None Include="assets\weaponpacka\recipes\grid\throwingspear.json" />
-    <None Include="assets\weaponpacka\recipes\grid\waraxe.json" />
-    <None Include="assets\weaponpacka\recipes\grid\warhammer.json" />
-    <None Include="assets\weaponpacka\recipes\grid\warpick.json" />
-    <None Include="assets\weaponpacka\recipes\knapping\javelinhead.json" />
-    <None Include="assets\weaponpacka\recipes\knapping\javelinheadflint.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\bastardswordhead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\chakri.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\epsilonaxehead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\haleberdhead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\igorothead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\katar.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\machetehead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\mambelehead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\naginatahead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\rapier.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\spathahead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\spearhead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\spikedagger.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\tachihead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\throwingspearhead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\waraxehead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\warhammerhead.json" />
-    <None Include="assets\weaponpacka\recipes\smithing\warpickhead.json" />
-    <None Include="assets\weaponpacka\shapes\block\clay\mold\clubmold.json" />
-    <None Include="assets\weaponpacka\shapes\block\clay\mold\khopesh-old.json" />
-    <None Include="assets\weaponpacka\shapes\block\clay\mold\khopeshmold.json" />
-    <None Include="assets\weaponpacka\shapes\block\clay\mold\knifemold.json" />
-    <None Include="assets\weaponpacka\shapes\block\clay\mold\tachimold.json" />
-    <None Include="assets\weaponpacka\shapes\item\dagger.json" />
-    <None Include="assets\weaponpacka\shapes\item\enlongblade.json" />
-    <None Include="assets\weaponpacka\shapes\item\enlongbladehead.json" />
-    <None Include="assets\weaponpacka\shapes\item\enlongbladewrap.json" />
-    <None Include="assets\weaponpacka\shapes\item\gladius.json" />
-    <None Include="assets\weaponpacka\shapes\item\gladius2.json" />
-    <None Include="assets\weaponpacka\shapes\item\gladiushead.json" />
-    <None Include="assets\weaponpacka\shapes\item\haftlarge.json" />
-    <None Include="assets\weaponpacka\shapes\item\haftmedium.json" />
-    <None Include="assets\weaponpacka\shapes\item\haftsmall.json" />
-    <None Include="assets\weaponpacka\shapes\item\haleberd.json" />
-    <None Include="assets\weaponpacka\shapes\item\haleberdhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\bastardswordhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\epsilonaxehead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\fletchings.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\halberdhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\harvestknifehead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\igorothead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\javelinfletching.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\leadclubhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\mambelehead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\naginatahead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\pikehead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\spathahead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\tachihead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\waraxehead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\warhammerhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\head\warpickhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\katar.json" />
-    <None Include="assets\weaponpacka\shapes\item\khopes.json" />
-    <None Include="assets\weaponpacka\shapes\item\mache.json" />
-    <None Include="assets\weaponpacka\shapes\item\machetehead.json" />
-    <None Include="assets\weaponpacka\shapes\item\matchfli.json" />
-    <None Include="assets\weaponpacka\shapes\item\matchobs.json" />
-    <None Include="assets\weaponpacka\shapes\item\plane.json" />
-    <None Include="assets\weaponpacka\shapes\item\spear.json" />
-    <None Include="assets\weaponpacka\shapes\item\spearhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\throwingspearhead.json" />
-    <None Include="assets\weaponpacka\shapes\item\tool\chakri.json" />
-    <None Include="assets\weaponpacka\shapes\item\tool\mambele.json" />
-    <None Include="assets\weaponpacka\shapes\item\tool\throwingspear-copper-old.json" />
-    <None Include="assets\weaponpacka\shapes\item\tool\throwingspear-copper.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\bastardsword1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\boneclub.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\boneknife.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\bonespear.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\chakri.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\culacula.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\epsilonaxe.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\halberd1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\harvestknife.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\igorot.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\katar.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\khopesh.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\leadclub.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\mambele.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\naginata1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\pike1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\rapier1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\spatha.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\spikedagger1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\tachi1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\waraxe1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\warhammer1.json" />
-    <None Include="assets\weaponpacka\shapes\item\weapon\warpick1.json" />
-    <None Include="modinfo.json" />
-  </ItemGroup>
   <ItemGroup>
     <Content Include="assets\game\sounds\player\strike1.ogg" />
     <Content Include="assets\game\sounds\player\strike2.ogg" />
@@ -238,5 +31,16 @@
     <Folder Include="assets\game\recipes\grid\tool\" />
     <Folder Include="assets\weaponpacka\patches\" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>C:\VintageStory\1.19\VintagestoryAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>C:\VintageStory\1.19\VintagestoryLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="PostBuild" BeforeTargets="PostBuildEvent">
+    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;publish\&quot;" />
+    <Exec Command="copy &quot;$(TargetDir)\$(TargetName).pdb&quot; &quot;publish\&quot;" />
+  </Target>
 </Project>
