@@ -83,7 +83,8 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 1.0499999523162842;
+
+      return secondsPassed < 1.0499999523162842*0.7; // bastard
     }
 
     public override void OnHeldAttackStop(

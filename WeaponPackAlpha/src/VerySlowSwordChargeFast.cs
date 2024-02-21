@@ -83,10 +83,11 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 1.5;
+      return (double) secondsPassed < 0.7;
     }
 
-    public override void OnHeldAttackStop(
+
+        public override void OnHeldAttackStop(
       float secondsPassed,
       ItemSlot slot,
       EntityAgent byEntity,

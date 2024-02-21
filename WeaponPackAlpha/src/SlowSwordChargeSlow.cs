@@ -61,7 +61,7 @@ namespace CustomWeaponSpeed
       EntitySelection entitySel)
     {
       float num1 = -Math.Min(0.35f, 2f * secondsPassed);
-      float num2 = Math.Min(1.2f, 20f * Math.Max(0.0f, secondsPassed - 0.3f));
+      float num2 = Math.Min(1.2f, 20f * Math.Max(0.0f, secondsPassed + 1));
       if (byEntity.World.Side == EnumAppSide.Client)
       {
         IClientWorldAccessor world = byEntity.World as IClientWorldAccessor;
@@ -83,7 +83,7 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 1.3500000238418579;
+      return secondsPassed < 1.3500000238418579 * 0.5; // epsilonaxe, waraxe
     }
 
     public override void OnHeldAttackStop(

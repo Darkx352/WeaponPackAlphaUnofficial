@@ -8,6 +8,7 @@
 	variantgroups: [
 		{ code: "material", states: [ "obsidian", "flint", "bone", "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ] },
 	],
+	behaviors: [{ name: "AnimationAuthoritative" }],
 	shapeByType: {
 		"throwingspear-*": { base: "item/tool/throwingspear-copper" }
 	},

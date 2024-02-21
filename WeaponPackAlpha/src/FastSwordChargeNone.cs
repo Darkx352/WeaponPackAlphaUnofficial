@@ -83,7 +83,7 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 0.800000011920929;
+      return (double) secondsPassed < 0.800000011920929 * 0.9; // tachi
     }
 
     public override void OnHeldAttackStop(

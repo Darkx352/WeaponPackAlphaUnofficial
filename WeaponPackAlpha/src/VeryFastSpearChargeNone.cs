@@ -83,7 +83,7 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 0.5;
+      return (double) secondsPassed < 0.7; //katar
     }
 
     public override void OnHeldAttackStop(

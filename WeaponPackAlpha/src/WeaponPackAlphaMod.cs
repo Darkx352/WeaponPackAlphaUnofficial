@@ -12,16 +12,16 @@ namespace CustomWeaponSpeed
   {
     public override void Start(ICoreAPI api)
     {
-      api.RegisterItemClass("VerySlowSwordChargeFast", typeof (VerySlowSwordChargeFast));
-      api.RegisterItemClass("VerySlowSpearChargeSlow", typeof (VerySlowSpearChargeSlow));
-      api.RegisterItemClass("SlowSwordChargeSlow", typeof (SlowSwordChargeSlow));
-      api.RegisterItemClass("SlowSwordChargeFast", typeof (SlowSwordChargeFast));
-      api.RegisterItemClass("SlowSpearChargeFast", typeof (SlowSpearChargeFast));
-      api.RegisterItemClass("NormalSwordChargeNone", typeof (NormalSwordChargeNone));
-      api.RegisterItemClass("NormalSwordChargeFast", typeof (NormalSwordChargeFast));
-      api.RegisterItemClass("FastSwordChargeNone", typeof (FastSwordChargeNone));
-      api.RegisterItemClass("VeryFastSwordChargeNone", typeof (VeryFastSwordChargeNone));
-      api.RegisterItemClass("VeryFastSpearChargeNone", typeof (VeryFastSpearChargeNone));
-    }
+            api.RegisterItemClass("VerySlowSwordChargeFast", typeof(VerySlowSwordChargeFast));
+            api.RegisterItemClass("VerySlowSpearChargeSlow", typeof(VerySlowSpearChargeSlow));
+            api.RegisterItemClass("SlowSwordChargeSlow", typeof(SlowSwordChargeSlow));
+            api.RegisterItemClass("SlowSwordChargeFast", typeof(SlowSwordChargeFast));
+            api.RegisterItemClass("SlowSpearChargeFast", typeof(SlowSpearChargeFast));
+            api.RegisterItemClass("NormalSwordChargeNone", typeof(NormalSwordChargeNone));
+            api.RegisterItemClass("NormalSwordChargeFast", typeof(NormalSwordChargeFast));
+            api.RegisterItemClass("FastSwordChargeNone", typeof(FastSwordChargeNone));
+            api.RegisterItemClass("VeryFastSwordChargeNone", typeof(VeryFastSwordChargeNone));
+            api.RegisterItemClass("VeryFastSpearChargeNone", typeof(VeryFastSpearChargeNone));
+        }
   }
 }

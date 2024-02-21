@@ -83,7 +83,7 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 1.3500000238418579;
+      return (double) secondsPassed < 1.3500000238418579 * 0.53; // boneclub, club/ khopes
     }
 
     public override void OnHeldAttackStop(

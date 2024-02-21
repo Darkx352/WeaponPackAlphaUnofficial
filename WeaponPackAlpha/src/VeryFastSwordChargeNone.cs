@@ -83,7 +83,7 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 0.5;
+      return secondsPassed < 1.18; // rapier
     }
 
     public override void OnHeldAttackStop(
