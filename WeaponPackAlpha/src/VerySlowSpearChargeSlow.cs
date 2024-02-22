@@ -83,7 +83,7 @@ namespace CustomWeaponSpeed
           world.AddCameraShake(0.2f);
         }
       }
-      return (double) secondsPassed < 1.15; // spike dagger, bene trident
+      return (double) secondsPassed < 1.15; // spike dagger, bone trident
     }
 
     public override void OnHeldAttackStop(
