@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <OutputType>Library</OutputType>
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -33,10 +33,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="VintagestoryAPI">
-      <HintPath>C:\VintageStory\1.20\VintagestoryAPI.dll</HintPath>
+      <HintPath>C:\VintageStory\1.21\VintagestoryAPI.dll</HintPath>
     </Reference>
     <Reference Include="VintagestoryLib">
-      <HintPath>C:\VintageStory\1.20\VintagestoryLib.dll</HintPath>
+      <HintPath>C:\VintageStory\1.21\VintagestoryLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Target Name="PostBuild" BeforeTargets="PostBuildEvent">

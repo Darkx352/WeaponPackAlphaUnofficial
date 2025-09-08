@@ -1,10 +1,10 @@
 {
   "profiles": {
-    "WeaponPackAlpha1.20": {
+    "WeaponPackAlpha1.21": {
       "commandName": "Executable",
-      "executablePath": "c:\\VintageStory\\1.20\\Vintagestory.exe",
-      "commandLineArgs": "--openWorld=\"debugTestWorld\" -pcreativebuilding --addModPath=\"d:\\Develope\\VintageStory\\ProjectsOthers\\WeaponPackAlphaUnofficial\\WeaponPackAlpha\\publish\" --addOrigin=\"d:\\Develope\\VintageStory\\ProjectsOthers\\WeaponPackAlphaUnofficial\\WeaponPackAlpha\\assets\" --dataPath C:\\VintageStory\\1.20Data --tracelog",
-      "workingDirectory": "c:\\VintageStory\\1.20\\"
+      "executablePath": "c:\\VintageStory\\1.21\\Vintagestory.exe",
+      "commandLineArgs": "--openWorld=\"debugTestWorld\" -pcreativebuilding --addModPath=\"c:\\Develope\\VintageStory\\ProjectsOthers\\WeaponPackAlphaUnofficial\\WeaponPackAlpha\\publish\" --addOrigin=\"c:\\Develope\\VintageStory\\ProjectsOthers\\WeaponPackAlphaUnofficial\\WeaponPackAlpha\\assets\" --dataPath C:\\VintageStory\\1.21Data --tracelog",
+      "workingDirectory": "c:\\VintageStory\\1.21\\"
     }
   }
 }

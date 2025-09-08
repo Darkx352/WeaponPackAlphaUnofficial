@@ -2,12 +2,12 @@
   "type": "code",
   "modid": "weaponpackalphaunoff",
   "name": "Alpha Weapon Pack unofficial",
-  "description" : "Adds 24 new weapons. Unofficial update 1.18/1.19/1.20 repack.",
+  "description" : "Adds 24 new weapons. Unofficial update 1.18/1.19/1.20/1.21 repack.",
   "authors": ["Mr1k3","fipil"],
-  "version": "1.6.0",
+  "version": "1.7.0",
   "RequiredOnClient": true,
   "RequiredOnServer": true,
   "dependency": {
-    "game": "1.20.0"
+    "game": "1.21.0"
   }
 }
