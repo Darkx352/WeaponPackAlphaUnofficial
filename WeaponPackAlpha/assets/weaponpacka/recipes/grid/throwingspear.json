@@ -37,12 +37,12 @@
 	output: { type: "item", code: "javelinfletching", quantity: 11  }
 },
 {
-	ingredientPattern: "B,K",
+	ingredientPattern: "__B,_K_",
 	ingredients: {
 		"K": { type: "item", code: "game:knife-*", isTool: true  },
 		"B": { type: "item", code: "game:bone"  }
 	},
-	width: 1,
+	width: 3,
 	height: 2,
 	shapeless: false,
 	output: { type: "item", code: "throwingspearhead-bone", quantity: 4  }
