@@ -7,7 +7,7 @@
   "version": "1.7.0",
   "RequiredOnClient": true,
   "RequiredOnServer": true,
-  "dependency": {
+  "dependencies": {
     "game": "1.21.0"
   }
 }
