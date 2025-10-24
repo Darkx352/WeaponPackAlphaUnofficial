@@ -1,6 +1,6 @@
 {
 	code: "macu",
-	damagedby: ["blockbreaking", "attacking"],
+	damagedby: ["attacking"],
 	tool: "sword",
 	class: "NormalSwordChargeNone",
 	attributes: {
