@@ -1,11 +1,9 @@
 {
 	"code": "chakri",
 	"class": "ItemSpear",
-	"damagedby": [ "blockbreaking" ],
+	"damagedby": [],
 	"tags": [ "weapon", "weapon-melee" ],
-	"tool": "spear",
 	"maxstacksize": 880,
-	"storageFlags": 513,
 	"variantgroups": [
 		{
 			"code": "material",

@@ -4,7 +4,6 @@
 	"tags": [ "weapon", "weapon-melee" ],
 	"damagedby": [ "attacking" ],
 	"storageFlags": 513,
-	"tool": "spear",
 	"variantgroups": [
 		{
 			"code": "material",

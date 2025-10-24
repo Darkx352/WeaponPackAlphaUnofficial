@@ -1,11 +1,9 @@
 {
 	"code": "throwingspear",
 	"class": "ItemSpear",
-	"damagedby": [ "blockbreaking" ],
+	"damagedby": [],
 	"tags": [ "weapon", "weapon-melee" ],
-	"tool": "spear",
 	"maxstacksize": 440,
-	"storageFlags": 513,
 	"variantgroups": [
 		{
 			"code": "material",
