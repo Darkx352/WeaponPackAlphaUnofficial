@@ -1,6 +1,6 @@
 {
 	code: "khopesh",
-	damagedby: ["blockbreaking", "attacking"],
+	damagedby: [ "attacking"],
 	tool: "sword",
 	class: "SlowSwordChargeFast",
 	attributes: {
