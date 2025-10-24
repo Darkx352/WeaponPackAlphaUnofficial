@@ -1,46 +1,56 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <OutputType>Library</OutputType>
-    <ApplicationVersion>1.0.0.0</ApplicationVersion>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyTitle>CustomWeaponSpeed</AssemblyTitle>
-    <Product>CustomWeaponSpeed</Product>
-    <Copyright>Copyright ©  2022</Copyright>
-    <FileVersion>1.0.0.0</FileVersion>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="assets\game\sounds\player\strike1.ogg" />
-    <Content Include="assets\game\sounds\player\strike2.ogg" />
-    <Content Include="assets\weaponpacka\textures\item\black.png" />
-    <Content Include="assets\weaponpacka\textures\item\bronze1.png" />
-    <Content Include="assets\weaponpacka\textures\item\coil.png" />
-    <Content Include="assets\weaponpacka\textures\item\glass1.png" />
-    <Content Include="assets\weaponpacka\textures\item\glass2.png" />
-    <Content Include="assets\weaponpacka\textures\item\glass3.png" />
-    <Content Include="assets\weaponpacka\textures\item\glass4.png" />
-    <Content Include="assets\weaponpacka\textures\item\glow1.png" />
-    <Content Include="assets\weaponpacka\textures\item\hotiron.png" />
-    <Content Include="assets\weaponpacka\textures\item\red.png" />
-    <Content Include="modicon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assets\game\itemtypes\tool\" />
-    <Folder Include="assets\game\patches\" />
-    <Folder Include="assets\game\recipes\grid\tool\" />
-    <Folder Include="assets\weaponpacka\patches\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="VintagestoryAPI">
-      <HintPath>C:\VintageStory\1.21\VintagestoryAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="VintagestoryLib">
-      <HintPath>C:\VintageStory\1.21\VintagestoryLib.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <Target Name="PostBuild" BeforeTargets="PostBuildEvent">
-    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;publish\&quot;" />
-    <Exec Command="copy &quot;$(TargetDir)\$(TargetName).pdb&quot; &quot;publish\&quot;" />
-  </Target>
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<OutputPath>bin\$(Configuration)\Mods</OutputPath>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="VintagestoryAPI">
+			<HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VSSurvivalMod">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VSEssentials">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VSCreativeMod">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VintagestoryLib">
+			<HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="protobuf-net">
+			<HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="cairo-sharp">
+			<HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Microsoft.Data.Sqlite">
+			<HintPath>$(VINTAGE_STORY)/Lib/Microsoft.Data.Sqlite.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<None Include="assets\**" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="modinfo.json" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="modicon.png" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+
 </Project>

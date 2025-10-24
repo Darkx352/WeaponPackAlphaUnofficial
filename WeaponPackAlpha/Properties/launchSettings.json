@@ -1,10 +1,16 @@
 {
   "profiles": {
-    "WeaponPackAlpha1.21": {
+    "Client": {
       "commandName": "Executable",
-      "executablePath": "c:\\VintageStory\\1.21\\Vintagestory.exe",
-      "commandLineArgs": "--openWorld=\"debugTestWorld\" -pcreativebuilding --addModPath=\"c:\\Develope\\VintageStory\\ProjectsOthers\\WeaponPackAlphaUnofficial\\WeaponPackAlpha\\publish\" --addOrigin=\"c:\\Develope\\VintageStory\\ProjectsOthers\\WeaponPackAlphaUnofficial\\WeaponPackAlpha\\assets\" --dataPath C:\\VintageStory\\1.21Data --tracelog",
-      "workingDirectory": "c:\\VintageStory\\1.21\\"
+      "executablePath": "dotnet",
+      "commandLineArgs": "\"$(VINTAGE_STORY)/Vintagestory.dll\" --tracelog --dataPath \"$(VINTAGE_STORY_DATA_LOCATION)\" --addModPath \"$(ProjectDir)/bin/$(Configuration)\" --openWorld \"CreativeTestings\"",
+      "workingDirectory": "$(VINTAGE_STORY)"
+    },
+    "Server": {
+      "commandName": "Executable",
+      "executablePath": "dotnet",
+      "commandLineArgs": "\"$(VINTAGE_STORY)/VintagestoryServer.dll\" --tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)\"",
+      "workingDirectory": "$(VINTAGE_STORY)"
     }
   }
 }
